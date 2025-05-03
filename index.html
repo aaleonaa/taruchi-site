@@ -6,6 +6,10 @@
   <title>たるちマヨ - デブ専門店</title>
   <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: "Arial", sans-serif;
@@ -80,6 +84,7 @@
     }
 
     .menu-item {
+      display: block;
       background: #fff;
       border-radius: 1em;
       padding: 1em;
@@ -90,6 +95,8 @@
       font-size: 1.3em;
       font-weight: bold;
       transition: transform 0.2s ease;
+      color: inherit;
+      text-decoration: none;
     }
 
     .menu-item:hover {
@@ -144,11 +151,11 @@
     <p>1時00分～入院するまで</p>
   </section>
 
-  <section class="menu-section">
+  <section class="menu-section" id="menu">
     <h2>メニュー</h2>
-    <div class="menu-item">今夜は帰らせないマヨタワー</div>
-    <div class="menu-item">白米チョモランマ盛り</div>
-    <div class="menu-item">ラーメン二郎の海</div>
+    <a href="mayo-tower.html" class="menu-item">今夜は帰らせないマヨタワー</a>
+    <a href="suihanki.html" class="menu-item">白米チョモランマ盛り</a>
+    <a href="jiro.html" class="menu-item">ラーメン二郎の海</a> 
     <div class="menu-item">カロリー大乱闘</div>
     <div class="menu-item">ごま油ショット</div>
     <div class="menu-item">マヨネーズボトルキープ</div>
